@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grocery(Bakkal)Store</title>
+
+    <!-- swiperjs cdn link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+
+    <!-- header section starts -->
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Z-Market</a>
+    
+        <nav class="navbar">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#features">Özelliklerimiz</a>
+            <a href="#products">Ürünlerimiz</a>
+            <a href="#categories">Kategoriler</a>
+            <a href="#review">Değerlendirmeler</a>
+            <a href="#blogs">Blogumuz</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="text" class="box" id="search-box" placeholder="Ara...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="assets/img/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>Karpuz</h3>
+                    <span class="price">₺39.99</span>
+                    <span class="quantity">miktar : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="assets/img/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>Soğan</h3>
+                    <span class="price">₺29.99</span>
+                    <span class="quantity">miktar : 1kg</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="assets/img/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>Piliç</h3>
+                    <span class="price">₺69.99</span>
+                    <span class="quantity">miktar : 1</span>
+                </div>
+            </div>
+            <div class="total"> Toplam : ₺139.99</div>
+            <a href="#" class="btn">Alışverişi tamamla</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Giriş yapın</h3>
+            <input type="email" placeholder="e-postanız" class="box">
+            <input type="password" placeholder="şifreniz" class="box">
+            <p>Şifrenizi mi unuttunuz ? <a href="#">şifrenizi yenileyin</a> </p>
+            <p>hesabınız mı yok ? <a href="#">hesap oluşturun</a></p>
+            <input type="submit" value="giriş yapın" class="btn">
+        </form>
+    
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Ürünlerimiz taze ve <span>organik</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sunt.</p>
+            <a href="#" class="btn">Sepete ekle</a>
+        </div>
+    </section>
+
+
+    <!-- home section ends -->
+
+    <!-- features section starts -->
+
+    <section class="features" id="features">
+        <h1 class="heading">Özelliklerimiz</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="assets/img/feature-img-1.png" alt="">
+                <h3>taze ve organik</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, illum!</p>
+                <a href="#" class="btn">Daha fazlası</a>
+            </div>
+            <div class="box">
+                <img src="assets/img/feature-img-2.png" alt="">
+                <h3>ücretsiz evinize ulaştırma</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, illum!</p>
+                <a href="#" class="btn">Daha fazlası</a>
+            </div>
+            <div class="box">
+                <img src="assets/img/feature-img-3.png" alt="">
+                <h3>kolay ödeme imkanı</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, illum!</p>
+                <a href="#" class="btn">Daha fazlası</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section ends   -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading">Ürünlerimiz</h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-1.png" alt="">
+                    <h3>taze portakal</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-2.png" alt="">
+                    <h3>taze soğan</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-3.png" alt="">
+                    <h3>taze et</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-4.png" alt="">
+                    <h3>taze marul</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <div class="swiper product-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-5.png" alt="">
+                    <h3>taze patates</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-6.png" alt="">
+                    <h3>taze avokado</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-7.png" alt="">
+                    <h3>taze havuç</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Sepete ekle</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/img/product-8.png" alt="">
+                    <h3>Yeşil limon</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Sepete ekle</a>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- products section ends  -->
+
+
+    <!-- categories section starts  -->
+
+    <section class="categories" id="categories">
+
+        <h1 class="heading">Ürün <span>kategorileri</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="assets/img/cat-1.png" alt="">
+                <h3>Sebzeler</h3>
+                <p>45% indirim</p>
+                <a href="#" class="btn">göz atın</a>
+            </div>
+
+            <div class="box">
+                <img src="assets/img/cat-2.png" alt="">
+                <h3>Taze meyveler</h3>
+                <p>45% indirim</p>
+                <a href="#" class="btn">göz atın</a>
+            </div>
+
+            <div class="box">
+                <img src="assets/img/cat-3.png" alt="">
+                <h3>Günlük ürünlerimiz</h3>
+                <p>45% indirim</p>
+                <a href="#" class="btn">göz atın</a>
+            </div>
+
+            <div class="box">
+                <img src="assets/img/cat-4.png" alt="">
+                <h3>Taze et ürünlerimiz</h3>
+                <p>45% indirim</p>
+                <a href="#" class="btn">göz atın</a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- categories section ends  -->
+
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">Ziyaretçilerimizin <span>Yorumları</span></h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="assets/img/pic-1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, expedita. Neque, quae eaque? Voluptate, optio?</p>
+                    <h3>Arda çorbacı</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="assets/img/pic-2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, expedita. Neque, quae eaque? Voluptate, optio?</p>
+                    <h3>Ayşen kaya</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="assets/img/pic-3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, expedita. Neque, quae eaque? Voluptate, optio?</p>
+                    <h3>Emre çalışkan</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="assets/img/pic-4.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, expedita. Neque, quae eaque? Voluptate, optio?</p>
+                    <h3>Ceyda Kasabalı</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- review section ends  -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"><span>Blogumuz</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="assets/img/blog-1.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Kullanıcı tarafından</a>
+                        <a href="#"> <i class="fas fa-user"></i>25nd may, 2022</a>
+                    </div>
+                    <h3>Taze ve organik sebze ve meyveler</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, expedita...</p>
+                    <a href="#" class="btn">Devamını oku</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/img/blog-2.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Kullanıcı tarafından</a>
+                        <a href="#"> <i class="fas fa-user"></i>25nd may, 2022</a>
+                    </div>
+                    <h3>Taze ve organik sebze ve meyveler</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, expedita...</p>
+                    <a href="#" class="btn">Devamını oku</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/img/blog-3.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Kullanıcı tarafından</a>
+                        <a href="#"> <i class="fas fa-user"></i>25nd may, 2022</a>
+                    </div>
+                    <h3>Taze ve organik sebze ve meyveler</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, expedita...</p>
+                    <a href="#" class="btn">Devamını oku</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- blogs section ends  -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+            
+            <div class="box">
+                <h3>z-market <i class="fas fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, perferendis.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/developerofgod" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/zaferkalik/" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/zafer-kalik-a8183621b/" target="_blank" class="fab fa-linkedin"></a>
+                    <a href="https://github.com/zafercode" target="_blank" class="fab fa-github"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>İletişim</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i>+0322 555 55 55</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i>+0322 555 55 56</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i>zmarket@gmail.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i>Turkey,Adana</a>
+            </div>
+
+            <div class="box">
+                <h3>Hızlı menü</h3>
+                <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> ana sayfa </a>
+                <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> özelliklerimiz </a>
+                <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> ürünlerimiz </a>
+                <a href="#categories" class="links"> <i class="fas fa-arrow-right"></i> kategoriler </a>
+                <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> değerlendirmeler </a>
+                <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogumuz </a>
+            </div>
+
+            <div class="box">
+                <h3>haberler</h3>
+                <p>Son güncellemeler için abone olun</p>
+                <input type="email" placeholder="e-posta" class="email">
+                <input type="submit" value="abone ol" class="btn">
+                <img src="assets/img/payment.png" class="payment" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span> zafercode </span> | all rights reserved.</div>
+    </section>
+    <!-- footer section ends  -->
+
+
+
+
+
+
+
+
+
+    <!-- swiperjs js link  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
